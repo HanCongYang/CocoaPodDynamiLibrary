@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "HanYangYangLib_Example.app"
-               BlueprintName = "HanYangYangLib_Example"
-               ReferencedContainer = "container:HanYangYangLib.xcodeproj">
+               BuildableName = "CocoaPodDynamiLibrary_Example.app"
+               BlueprintName = "CocoaPodDynamiLibrary_Example"
+               ReferencedContainer = "container:CocoaPodDynamiLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "HanYangYangLib_Tests.xctest"
-               BlueprintName = "HanYangYangLib_Tests"
-               ReferencedContainer = "container:HanYangYangLib.xcodeproj">
+               BuildableName = "CocoaPodDynamiLibrary_Tests.xctest"
+               BlueprintName = "CocoaPodDynamiLibrary_Tests"
+               ReferencedContainer = "container:CocoaPodDynamiLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "HanYangYangLib_Tests.xctest"
-               BlueprintName = "HanYangYangLib_Tests"
-               ReferencedContainer = "container:HanYangYangLib.xcodeproj">
+               BuildableName = "CocoaPodDynamiLibrary_Tests.xctest"
+               BlueprintName = "CocoaPodDynamiLibrary_Tests"
+               ReferencedContainer = "container:CocoaPodDynamiLibrary.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "HanYangYangLib_Example.app"
-            BlueprintName = "HanYangYangLib_Example"
-            ReferencedContainer = "container:HanYangYangLib.xcodeproj">
+            BuildableName = "CocoaPodDynamiLibrary_Example.app"
+            BlueprintName = "CocoaPodDynamiLibrary_Example"
+            ReferencedContainer = "container:CocoaPodDynamiLibrary.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "HanYangYangLib_Example.app"
-            BlueprintName = "HanYangYangLib_Example"
-            ReferencedContainer = "container:HanYangYangLib.xcodeproj">
+            BuildableName = "CocoaPodDynamiLibrary_Example.app"
+            BlueprintName = "CocoaPodDynamiLibrary_Example"
+            ReferencedContainer = "container:CocoaPodDynamiLibrary.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -101,9 +101,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "HanYangYangLib_Example.app"
-            BlueprintName = "HanYangYangLib_Example"
-            ReferencedContainer = "container:HanYangYangLib.xcodeproj">
+            BuildableName = "CocoaPodDynamiLibrary_Example.app"
+            BlueprintName = "CocoaPodDynamiLibrary_Example"
+            ReferencedContainer = "container:CocoaPodDynamiLibrary.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

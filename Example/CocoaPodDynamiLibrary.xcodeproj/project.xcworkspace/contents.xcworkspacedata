@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HanYangYangLib.xcodeproj">
+      location = "self:CocoaPodDynamiLibrary.xcodeproj">
    </FileRef>
 </Workspace>

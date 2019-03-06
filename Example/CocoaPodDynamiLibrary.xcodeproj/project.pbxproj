@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11BAA21FE092A757A5CB18D1 /* Pods_HanYangYangLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E991FED17A3A96C186D77F6F /* Pods_HanYangYangLib_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		DC95C10AC5B26A80571F4823 /* Pods_HanYangYangLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74D9303E4D00B39CF738EF4 /* Pods_HanYangYangLib_Tests.framework */; };
+		6341B49E02690062316E7A2A /* Pods_CocoaPodDynamiLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1054F354AC67D290CD9A5B /* Pods_CocoaPodDynamiLibrary_Example.framework */; };
+		C9467B91C38FB74BBE950C45 /* Pods_CocoaPodDynamiLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6A4BFE027C83DE5DB44433 /* Pods_CocoaPodDynamiLibrary_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,30 +23,30 @@
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = HanYangYangLib;
+			remoteInfo = CocoaPodDynamiLibrary;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0332B20EF23F273B6BB5D5ED /* HanYangYangLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HanYangYangLib.podspec; path = ../HanYangYangLib.podspec; sourceTree = "<group>"; };
-		247A5294A02B6854C50DEBEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2AEFBB67A89A71A78AE8360D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4B67CFB5E1DFFF6DA0847728 /* Pods-HanYangYangLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYangYangLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HanYangYangLib_Tests/Pods-HanYangYangLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* HanYangYangLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HanYangYangLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		017B18264040F0D0B78E44FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		23CCE91596A2F3B55B6CCB89 /* Pods-CocoaPodDynamiLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodDynamiLibrary_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodDynamiLibrary_Example/Pods-CocoaPodDynamiLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
+		37830B2C92B9B886A586D61C /* CocoaPodDynamiLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CocoaPodDynamiLibrary.podspec; path = ../CocoaPodDynamiLibrary.podspec; sourceTree = "<group>"; };
+		4C1BC93E5018BA9E45E879E1 /* Pods-CocoaPodDynamiLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodDynamiLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodDynamiLibrary_Tests/Pods-CocoaPodDynamiLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E1054F354AC67D290CD9A5B /* Pods_CocoaPodDynamiLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodDynamiLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB232C54C5E72D5CDFBC19E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* CocoaPodDynamiLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodDynamiLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* HanYangYangLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HanYangYangLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* CocoaPodDynamiLibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodDynamiLibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7A009EFC365BDB69FBFE14D6 /* Pods-HanYangYangLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYangYangLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HanYangYangLib_Example/Pods-HanYangYangLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BBE8EC4F04BE287CE6C9D8E6 /* Pods-HanYangYangLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYangYangLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HanYangYangLib_Tests/Pods-HanYangYangLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D74D9303E4D00B39CF738EF4 /* Pods_HanYangYangLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYangYangLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E991FED17A3A96C186D77F6F /* Pods_HanYangYangLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HanYangYangLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC89AA51C5311F52B75C3363 /* Pods-HanYangYangLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HanYangYangLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HanYangYangLib_Example/Pods-HanYangYangLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		72AB8C9C593156F4ED04EB33 /* Pods-CocoaPodDynamiLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodDynamiLibrary_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodDynamiLibrary_Example/Pods-CocoaPodDynamiLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B7883771F646283A0FCECD4F /* Pods-CocoaPodDynamiLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodDynamiLibrary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaPodDynamiLibrary_Tests/Pods-CocoaPodDynamiLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CB6A4BFE027C83DE5DB44433 /* Pods_CocoaPodDynamiLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodDynamiLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BAA21FE092A757A5CB18D1 /* Pods_HanYangYangLib_Example.framework in Frameworks */,
+				6341B49E02690062316E7A2A /* Pods_CocoaPodDynamiLibrary_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,35 +62,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC95C10AC5B26A80571F4823 /* Pods_HanYangYangLib_Tests.framework in Frameworks */,
+				C9467B91C38FB74BBE950C45 /* Pods_CocoaPodDynamiLibrary_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F36CC1F5F5539C68767C27C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72AB8C9C593156F4ED04EB33 /* Pods-CocoaPodDynamiLibrary_Example.debug.xcconfig */,
+				23CCE91596A2F3B55B6CCB89 /* Pods-CocoaPodDynamiLibrary_Example.release.xcconfig */,
+				4C1BC93E5018BA9E45E879E1 /* Pods-CocoaPodDynamiLibrary_Tests.debug.xcconfig */,
+				B7883771F646283A0FCECD4F /* Pods-CocoaPodDynamiLibrary_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A73C31EC0A190D268D24546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E1054F354AC67D290CD9A5B /* Pods_CocoaPodDynamiLibrary_Example.framework */,
+				CB6A4BFE027C83DE5DB44433 /* Pods_CocoaPodDynamiLibrary_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for HanYangYangLib */,
+				607FACD21AFB9204008FA782 /* Example for CocoaPodDynamiLibrary */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				7F0380C14C85688735409CF3 /* Pods */,
-				C746E652FFF0966A31D79247 /* Frameworks */,
+				1F36CC1F5F5539C68767C27C /* Pods */,
+				5A73C31EC0A190D268D24546 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* HanYangYangLib_Example.app */,
-				607FACE51AFB9204008FA782 /* HanYangYangLib_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* CocoaPodDynamiLibrary_Example.app */,
+				607FACE51AFB9204008FA782 /* CocoaPodDynamiLibrary_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for HanYangYangLib */ = {
+		607FACD21AFB9204008FA782 /* Example for CocoaPodDynamiLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -100,8 +120,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for HanYangYangLib";
-			path = HanYangYangLib;
+			name = "Example for CocoaPodDynamiLibrary";
+			path = CocoaPodDynamiLibrary;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -132,73 +152,52 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				0332B20EF23F273B6BB5D5ED /* HanYangYangLib.podspec */,
-				247A5294A02B6854C50DEBEE /* README.md */,
-				2AEFBB67A89A71A78AE8360D /* LICENSE */,
+				37830B2C92B9B886A586D61C /* CocoaPodDynamiLibrary.podspec */,
+				5CB232C54C5E72D5CDFBC19E /* README.md */,
+				017B18264040F0D0B78E44FF /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		7F0380C14C85688735409CF3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7A009EFC365BDB69FBFE14D6 /* Pods-HanYangYangLib_Example.debug.xcconfig */,
-				FC89AA51C5311F52B75C3363 /* Pods-HanYangYangLib_Example.release.xcconfig */,
-				BBE8EC4F04BE287CE6C9D8E6 /* Pods-HanYangYangLib_Tests.debug.xcconfig */,
-				4B67CFB5E1DFFF6DA0847728 /* Pods-HanYangYangLib_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C746E652FFF0966A31D79247 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E991FED17A3A96C186D77F6F /* Pods_HanYangYangLib_Example.framework */,
-				D74D9303E4D00B39CF738EF4 /* Pods_HanYangYangLib_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* HanYangYangLib_Example */ = {
+		607FACCF1AFB9204008FA782 /* CocoaPodDynamiLibrary_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HanYangYangLib_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CocoaPodDynamiLibrary_Example" */;
 			buildPhases = (
-				B21375C22CE9444BA0C0FBA6 /* [CP] Check Pods Manifest.lock */,
+				9D7E2E02B4F571FFD389608F /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				2D4D304ADA0498F816FD0414 /* [CP] Embed Pods Frameworks */,
+				FFBF1ADE94ED48DDDD5F0724 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HanYangYangLib_Example;
-			productName = HanYangYangLib;
-			productReference = 607FACD01AFB9204008FA782 /* HanYangYangLib_Example.app */;
+			name = CocoaPodDynamiLibrary_Example;
+			productName = CocoaPodDynamiLibrary;
+			productReference = 607FACD01AFB9204008FA782 /* CocoaPodDynamiLibrary_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* HanYangYangLib_Tests */ = {
+		607FACE41AFB9204008FA782 /* CocoaPodDynamiLibrary_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HanYangYangLib_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CocoaPodDynamiLibrary_Tests" */;
 			buildPhases = (
-				2AF78592B5E8FC462F1E70D2 /* [CP] Check Pods Manifest.lock */,
+				E1B182C1B49879BED4B84E45 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				9A9E742CCC8BB044CA9C96F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = HanYangYangLib_Tests;
+			name = CocoaPodDynamiLibrary_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* HanYangYangLib_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* CocoaPodDynamiLibrary_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "HanYangYangLib" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "CocoaPodDynamiLibrary" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* HanYangYangLib_Example */,
-				607FACE41AFB9204008FA782 /* HanYangYangLib_Tests */,
+				607FACCF1AFB9204008FA782 /* CocoaPodDynamiLibrary_Example */,
+				607FACE41AFB9204008FA782 /* CocoaPodDynamiLibrary_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +261,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2AF78592B5E8FC462F1E70D2 /* [CP] Check Pods Manifest.lock */ = {
+		9D7E2E02B4F571FFD389608F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,50 +272,14 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HanYangYangLib_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPodDynamiLibrary_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D4D304ADA0498F816FD0414 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HanYangYangLib_Example/Pods-HanYangYangLib_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HanYangYangLib/HanYangYangLib.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HanYangYangLib.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HanYangYangLib_Example/Pods-HanYangYangLib_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A9E742CCC8BB044CA9C96F3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HanYangYangLib_Tests/Pods-HanYangYangLib_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HanYangYangLib_Tests/Pods-HanYangYangLib_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B21375C22CE9444BA0C0FBA6 /* [CP] Check Pods Manifest.lock */ = {
+		E1B182C1B49879BED4B84E45 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,11 +290,29 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HanYangYangLib_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CocoaPodDynamiLibrary_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBF1ADE94ED48DDDD5F0724 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPodDynamiLibrary_Example/Pods-CocoaPodDynamiLibrary_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaPodDynamiLibrary/CocoaPodDynamiLibrary.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaPodDynamiLibrary.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaPodDynamiLibrary_Example/Pods-CocoaPodDynamiLibrary_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -359,7 +340,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* HanYangYangLib_Example */;
+			target = 607FACCF1AFB9204008FA782 /* CocoaPodDynamiLibrary_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,10 +466,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A009EFC365BDB69FBFE14D6 /* Pods-HanYangYangLib_Example.debug.xcconfig */;
+			baseConfigurationReference = 72AB8C9C593156F4ED04EB33 /* Pods-CocoaPodDynamiLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HanYangYangLib/Info.plist;
+				INFOPLIST_FILE = CocoaPodDynamiLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -500,10 +481,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC89AA51C5311F52B75C3363 /* Pods-HanYangYangLib_Example.release.xcconfig */;
+			baseConfigurationReference = 23CCE91596A2F3B55B6CCB89 /* Pods-CocoaPodDynamiLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HanYangYangLib/Info.plist;
+				INFOPLIST_FILE = CocoaPodDynamiLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -515,7 +496,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE8EC4F04BE287CE6C9D8E6 /* Pods-HanYangYangLib_Tests.debug.xcconfig */;
+			baseConfigurationReference = 4C1BC93E5018BA9E45E879E1 /* Pods-CocoaPodDynamiLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -531,13 +512,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HanYangYangLib_Example.app/HanYangYangLib_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaPodDynamiLibrary_Example.app/CocoaPodDynamiLibrary_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B67CFB5E1DFFF6DA0847728 /* Pods-HanYangYangLib_Tests.release.xcconfig */;
+			baseConfigurationReference = B7883771F646283A0FCECD4F /* Pods-CocoaPodDynamiLibrary_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -549,14 +530,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HanYangYangLib_Example.app/HanYangYangLib_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaPodDynamiLibrary_Example.app/CocoaPodDynamiLibrary_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "HanYangYangLib" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "CocoaPodDynamiLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -565,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HanYangYangLib_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CocoaPodDynamiLibrary_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -574,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "HanYangYangLib_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CocoaPodDynamiLibrary_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

@@ -1,5 +1,5 @@
 import XCTest
-import HanYangYangLib
+import CocoaPodDynamiLibrary
 
 class Tests: XCTestCase {
     

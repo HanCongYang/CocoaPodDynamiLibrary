@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HanYangYangLib
+//  CocoaPodDynamiLibrary
 //
-//  Created by warship495949598@vip.qq.com on 03/06/2019.
+//  Created by warship495949598@vip.qq.com on 03/07/2019.
 //  Copyright (c) 2019 warship495949598@vip.qq.com. All rights reserved.
 //
 
