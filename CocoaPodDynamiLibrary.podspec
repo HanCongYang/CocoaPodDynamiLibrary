@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaPodDynamiLibrary'
-  s.version          = '2.0.0'
+  s.version          = '3.0.0'
   s.summary          = 'A short description of CocoaPodDynamiLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'warship495949598@vip.qq.com' => 'warship495949598@vip.qq.com' }
-  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary', :tag => "2.0.0" }
+  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary', :tag => "3.0.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
