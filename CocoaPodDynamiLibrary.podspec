@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaPodDynamiLibrary'
-  s.version          = '5.0.0'
+  s.version          = '7.0.0'
   s.summary          = 'ceshi'
   s.swift_version = '4.2'
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'warship495949598@vip.qq.com' => 'warship495949598@vip.qq.com' }
-  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary.git', :tag => "5.0.0" }
+  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary.git', :tag => "7.0.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
