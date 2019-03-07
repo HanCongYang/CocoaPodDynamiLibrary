@@ -24,6 +24,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CocoaPodDynamiLibrary/**/*.{h,m,mm,swift}'
-  s.vendored_frameworks = "**/ElastosCarrier.framework"
 
 end
