@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaPodDynamiLibrary'
-  s.version          = '3.0.0'
+  s.version          = '4.0.0'
   s.summary          = 'ceshi'
   s.swift_version = '4.2'
 
@@ -18,18 +18,12 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'warship495949598@vip.qq.com' => 'warship495949598@vip.qq.com' }
-  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary.git', :tag => "3.0.0" }
+  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary.git', :tag => "4.0.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CocoaPodDynamiLibrary/**/*.{h,m,mm,swift, framework}*'
-  
-  # s.resource_bundles = {
-  #   'CocoaPodDynamiLibrary' => ['CocoaPodDynamiLibrary/Assets/*.png']
-  # }
+  s.source_files = 'CocoaPodDynamiLibrary/**/*.{h,m,mm,swift}'
+  s.vendored_frameworks = "**/ElastosCarrier.framework"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
