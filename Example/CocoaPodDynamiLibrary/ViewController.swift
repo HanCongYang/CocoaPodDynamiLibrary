@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CocoaPodDynamiLibrary
 
 class ViewController: UIViewController {
 

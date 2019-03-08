@@ -26,6 +26,9 @@ Pod::Spec.new do |s|
   s.source_files = 'CocoaPodDynamiLibrary/**/*.{h,m,mm,swift}'
   
   s.vendored_library = 'Libraries/*.a'
-  s.vendored_frameworks = 'Frameworks/**/*.{h}'
+  s.vendored_frameworks = 'Frameworks/*.framework'
+  s.source_files = 'Frameworks/ElastosCarrier.framework/Headers/*.swift'
+  s.public_header_files   = 'Frameworks/ElastosCarrier.framework/Headers/*.swift'
+  
 
 end
