@@ -167,7 +167,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 #endif
 
-
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -190,9 +189,6 @@ SWIFT_CLASS_NAMED("BootstrapNode")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-enum ELACarrierLogLevel : NSInteger;
-@class ELACarrierOptions;
-@protocol ELACarrierDelegate;
 @class NSError;
 @class ELACarrierUserInfo;
 enum ELACarrierPresenceStatus : NSInteger;
@@ -203,96 +199,7 @@ enum ELACarrierPresenceStatus : NSInteger;
 /// The class representing carrier node.
 SWIFT_CLASS_NAMED("Carrier")
 @interface ELACarrier : NSObject
-/// Get current carrier node version.
-///
-/// returns:
-/// The current carrier node version.
-+ (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
-/// Check if the carrier address ID is valid.
-/// \param address The carrier address to be check
-///
-///
-/// returns:
-/// True if carrier address is valid, otherwise false
-+ (BOOL)isValidAddress:(NSString * _Nonnull)address SWIFT_WARN_UNUSED_RESULT;
-/// Check if the carrier public ID is valid.
-/// \param id The carrier id to be check
-///
-///
-/// returns:
-/// True if carrier id is valid, otherwise false
-+ (BOOL)isValidUserId:(NSString * _Nonnull)id SWIFT_WARN_UNUSED_RESULT;
-/// Extract ID from the carrier node address.
-/// \param address The carrier node address.
-///
-///
-/// returns:
-/// Valid Id if carrier node address is valid, otherwise nil
-+ (NSString * _Nullable)getUserIdFromAddress:(NSString * _Nonnull)address SWIFT_WARN_UNUSED_RESULT;
-/// Set log level for carrier node.
-/// Default level to control log output is <code>CarrierLogLevel.Info</code>
-/// \param level The log level
-///
-+ (void)setLogLevel:(enum ELACarrierLogLevel)level;
-/// Create node singleton instance. After initialize the instance,
-/// it’s ready to start and therefore connect to the carrier network.
-/// \param options The options to set for carrier node
-///
-/// \param delegate The delegate for carrier node to comply with
-///
-///
-/// throws:
-/// CarrierError
-+ (BOOL)initializeSharedInstance:(ELACarrierOptions * _Nonnull)options delegate:(id <ELACarrierDelegate> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error;
-/// Get a carrier node singleton instance.
-///
-/// returns:
-/// The carrier node instance or ni
-+ (ELACarrier * _Nullable)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-/// Start carrier node asynchronously to connect to carrier network.
-/// If the connection to network is successful, carrier node starts
-/// working.
-/// \param iterateInterval Internal loop interval, in milliseconds
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)start:(NSInteger)iterateInterval error:(NSError * _Nullable * _Nullable)error;
-/// Disconnect carrier node from the server, and destroy all associated
-/// resources to carrier node instance.
-/// After calling the method, the carrier node instance becomes invalid,
-/// and can not be refered any more.
-- (void)kill;
-/// Get node address associated with carrier node instance.
-/// Returns: The node address
-- (NSString * _Nonnull)getAddress SWIFT_WARN_UNUSED_RESULT;
-/// Get node identifier associated with the carrier node instance.
-///
-/// returns:
-/// The node identifier
-- (NSString * _Nonnull)getNodeId SWIFT_WARN_UNUSED_RESULT;
-/// Get user identifier associated with the carrier node instance.
-///
-/// returns:
-/// The user identifier
-- (NSString * _Nonnull)getUserId SWIFT_WARN_UNUSED_RESULT;
-/// Update the nospam for carrier node address
-/// Update the 4-byte nospam part of the Carrier address with host byte order
-/// expected. Nospam for Carrier address is used to eliminate spam friend
-/// request.
-/// \param newNospam The new nospam to address.
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)setSelfNospam:(uint32_t)newNospam error:(NSError * _Nullable * _Nullable)error;
 - (uint32_t)getSelfNospam:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-/// \param newUserInfo The new user information to set
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)setSelfUserInfo:(ELACarrierUserInfo * _Nonnull)newUserInfo error:(NSError * _Nullable * _Nullable)error;
 /// Get self user information.
 ///
 /// throws:
@@ -301,19 +208,7 @@ SWIFT_CLASS_NAMED("Carrier")
 /// returns:
 /// The current user information
 - (ELACarrierUserInfo * _Nullable)getSelfUserInfo:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-/// Set self presence status
-/// \param newPresence The new presence status to friends.
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)setSelfPresence:(enum ELACarrierPresenceStatus)newPresence error:(NSError * _Nullable * _Nullable)error;
 - (enum ELACarrierPresenceStatus)getSelfPresence:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-/// Check if carrier node instance is being ready.
-///
-/// returns:
-/// true if the carrier node instance is ready, or false if not
-- (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
 ///
 /// throws:
 /// CarrierError
@@ -359,23 +254,6 @@ SWIFT_CLASS_NAMED("Carrier")
 /// throws:
 /// CarrierError
 - (BOOL)addFriendWith:(NSString * _Nonnull)userId withGreeting:(NSString * _Nonnull)hello error:(NSError * _Nullable * _Nullable)error;
-/// Accept the friend request.
-/// This function is used to add a friend in response to a friend request.
-/// \param userId The user id who want be friend with current user
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)acceptFriend:(NSString * _Nonnull)userId error:(NSError * _Nullable * _Nullable)error;
-/// Remove friendship with the specified friend.
-/// If all correct, Carrier network will clean the friend relationship,
-/// and send friend removed message to both.
-/// \param friendId The target user id to remove friendship.
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)removeFriend:(NSString * _Nonnull)friendId error:(NSError * _Nullable * _Nullable)error;
 /// Send a message to the specified friend.
 /// The message length may not exceed <code>MAX_APP_MESSAGE_LEN</code>, and message
 /// itself should be text-formatted. Larger messages must be splitted by
@@ -402,51 +280,6 @@ SWIFT_CLASS_NAMED("Carrier")
 /// throws:
 /// CarrierError
 - (BOOL)sendFriendMessage:(NSString * _Nonnull)target data:(NSData * _Nonnull)data error:(NSError * _Nullable * _Nullable)error;
-/// Send invite request to the specified friend
-/// Application can attach the application defined data with in the invite
-/// request, and the data will send to target friend.
-/// \param target The target id
-///
-/// \param data The application defined data send to target user
-///
-/// \param responseHandler The callback to receive invite reponse
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)sendInviteFriendRequest:(NSString * _Nonnull)target withData:(NSString * _Nonnull)data responseHandler:(void (^ _Nonnull)(ELACarrier * _Nonnull, NSString * _Nonnull, NSInteger, NSString * _Nullable, NSString * _Nullable))responseHandler error:(NSError * _Nullable * _Nullable)error;
-/// Reply the friend invite request.
-/// This function will send a invite response to friend.
-/// \param target The id(userid@nodeid) who send invite request
-///
-/// \param status The status code of the response
-/// 0 is on success, otherse is error
-///
-/// \param reason The error message if status is error, or nil if success
-///
-/// \param data The application defined data send to target user.
-/// If the status is error, this will be ignored.
-///
-///
-/// throws:
-/// CarrierError
-- (BOOL)replyFriendInviteRequest:(NSString * _Nonnull)target withStatus:(NSInteger)status reason:(NSString * _Nullable)reason data:(NSString * _Nullable)data error:(NSError * _Nullable * _Nullable)error;
-/// New a group with specified delegate.
-/// \param delegate The delegate attached to the new group.
-///
-///
-/// throws:
-///
-/// CarrierError
-///
-/// returns:
-///
-/// <ul>
-///   <li>
-///     The new group.
-///   </li>
-/// </ul>
-- (ELACarrierGroup * _Nullable)createGroupwithDelegate:(id <ELACarrierGroupDelegate> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Join a group with specific cookie information.
 /// This function should be called only if application received a group
 /// invitation from remote friend.
@@ -676,14 +509,6 @@ SWIFT_PROTOCOL_NAMED("CarrierDelegate")
 /// The class representing the carrier filetransfer connection.
 SWIFT_CLASS_NAMED("CarrierFileTransfer")
 @interface ELACarrierFileTransfer : NSObject
-/// Close a filetransfer to friend. All resources associated with current
-/// filetransfer will be destroyed.
-- (void)close;
-/// Get remote friend id.
-///
-/// returns:
-/// The remote peer userid or userid@nodeid
-- (NSString * _Nonnull)getPeer SWIFT_WARN_UNUSED_RESULT;
 /// Acquire an unique file identifier by filename within the filetransfer
 /// instance.
 /// \param fileName The file name
@@ -858,28 +683,6 @@ SWIFT_CLASS_NAMED("CarrierFileTransferManager")
 ///
 /// CarrierError
 + (BOOL)initializeSharedInstance:(ELACarrier * _Nonnull)carrier connectHandler:(void (^ _Nonnull)(ELACarrier * _Nonnull, NSString * _Nonnull, ELACarrierFileTransferInfo * _Nonnull))handler error:(NSError * _Nullable * _Nullable)error;
-/// Get a carrier filetransfer manager instance.
-///
-/// returns:
-/// The carrier filetransfer manager or nil
-+ (ELAFileTransferManager * _Nullable)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-/// Clean up carrier session manager.
-- (void)cleanup;
-/// Create a new filetransfer connection to the specified friend.
-/// The filetransfer object represents a connection handle to a friend.
-/// \param address The target address.
-///
-/// \param fileinfo The fileinfo to plan to transfer.
-///
-/// \param delegate The delegate attached to the new filetransfer instance.
-///
-///
-/// throws:
-/// CarrierError
-///
-/// returns:
-/// The new CarrierFileTransfer
-- (ELACarrierFileTransfer * _Nullable)createFileTransfertoAddress:(NSString * _Nonnull)address withFileInfo:(ELACarrierFileTransferInfo * _Nullable)fileInfo delegate:(id <ELACarrierFileTransferDelegate> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -908,12 +711,6 @@ SWIFT_CLASS_NAMED("CarrierFriendInfo")
 /// The class representing carrier group.
 SWIFT_CLASS_NAMED("CarrierGroup")
 @interface ELACarrierGroup : NSObject
-/// Get groupid in string way.
-///
-/// returns:
-///
-/// The groupid in string.
-- (NSString * _Nonnull)getId SWIFT_WARN_UNUSED_RESULT;
 /// Invite a specified friend into group.
 /// \param friendId The friend wll be invited into group.
 ///
@@ -1090,22 +887,12 @@ typedef SWIFT_ENUM_NAMED(NSInteger, ELACarrierPresenceStatus, "CarrierPresenceSt
   ELACarrierPresenceStatusBusy = 2,
 };
 
-enum ELACarrierStreamType : NSInteger;
-@protocol ELACarrierStreamDelegate;
 @class ELACarrierStream;
 enum ELAPortForwardingProtocol : NSInteger;
 
 /// The class representing the carrier session conversation.
 SWIFT_CLASS_NAMED("CarrierSession")
 @interface ELACarrierSession : NSObject
-/// Close a session to friend. All resources include streams, channels,
-/// portforwardings associated with current session will be destroyed.
-- (void)close;
-/// Get remote peer id.
-///
-/// returns:
-/// The remote peer userid or userid@nodeid
-- (NSString * _Nonnull)getPeer SWIFT_WARN_UNUSED_RESULT;
 /// TODO: Add setUserdata & getUserdata
 /// Send session request to the friend.
 /// \param handler A handler to receive the session response
@@ -1125,38 +912,6 @@ SWIFT_CLASS_NAMED("CarrierSession")
 /// throws:
 /// CarrierError
 - (BOOL)replyInviteRequestWithStatus:(NSInteger)status reason:(NSString * _Nullable)reason error:(NSError * _Nullable * _Nullable)error;
-/// Add a new stream to session.
-/// Carrier stream supports several underlying transport mechanisms:
-/// <ul>
-///   <li>
-///     Plain/encrypted UDP data gram protocol
-///   </li>
-///   <li>
-///     Plain/encrypted TCP like reliable stream protocol
-///   </li>
-///   <li>
-///     Multiplexing over UDP
-///   </li>
-///   <li>
-///     Multiplexing over TCP like reliable protocol
-///   </li>
-/// </ul>
-/// Application can use options to specify the new stream mode.
-/// Multiplexing over UDP can not provide reliable transport.
-/// \param type The stream type defined in CarrierStreamType
-///
-/// \param options The stream mode options
-///
-/// \param delegate The Application defined protocol defined in
-/// <code>CarrierStreamDelegate</code>
-///
-///
-/// throws:
-/// CarrierError
-///
-/// returns:
-/// The new added carrier stream
-- (ELACarrierStream * _Nullable)addStreaWithType:(enum ELACarrierStreamType)type options:(ELACarrierStreamOptions)options delegate:(id <ELACarrierStreamDelegate> _Nonnull)delegate error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Remove a stream from session
 /// \param stream The carrier stream to be removed
 ///
@@ -1215,24 +970,6 @@ SWIFT_CLASS_NAMED("CarrierSessionManager")
 /// throws:
 /// CarrierError
 + (BOOL)initializeSharedInstance:(ELACarrier * _Nonnull)carrier sessionRequestHandler:(void (^ _Nonnull)(ELACarrier * _Nonnull, NSString * _Nonnull, NSString * _Nonnull))handler error:(NSError * _Nullable * _Nullable)error;
-/// Get a carrier session manager instance.
-///
-/// returns:
-/// The carrier session manager or nil
-+ (ELACarrierSessionManager * _Nullable)sharedInstance SWIFT_WARN_UNUSED_RESULT;
-/// Clean up carrier session manager.
-- (void)cleanup;
-/// Create a new session converstation to the specified friend.
-/// The session object represent a conversation handle to a friend.
-/// \param target The target id.
-///
-///
-/// throws:
-/// CarrierError
-///
-/// returns:
-/// The new CarrierSession
-- (ELACarrierSession * _Nullable)createSession:(NSString * _Nonnull)target error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -1243,11 +980,6 @@ SWIFT_CLASS_NAMED("CarrierSessionManager")
 /// The class representing carrier stream.
 SWIFT_CLASS_NAMED("CarrierStream")
 @interface ELACarrierStream : NSObject
-/// Get the carrier stream type.
-///
-/// returns:
-/// The stream type defined in CarrierStreamType
-- (enum ELACarrierStreamType)getType SWIFT_WARN_UNUSED_RESULT;
 /// TODO: add getState
 - (ELACarrierTransportInfo * _Nullable)getTransportInfo:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Send outgoing data to remote peer.

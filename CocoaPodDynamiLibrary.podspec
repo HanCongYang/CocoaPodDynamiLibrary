@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaPodDynamiLibrary'
-  s.version          = '7.1.2'
+  s.version          = '7.1.5'
   s.summary          = 'ceshi'
   s.swift_version = '4.2'
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'warship495949598@vip.qq.com' => 'warship495949598@vip.qq.com' }
-  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary.git', :tag => '7.1.2' }
+  s.source           = { :git => 'https://github.com/HanCongYang/CocoaPodDynamiLibrary.git', :tag => '7.1.5' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -29,7 +29,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Frameworks/*.framework'
   s.source_files = 'Frameworks/ElastosCarrier.framework/Headers/*.h'
   s.public_header_files   = 'Frameworks/ElastosCarrier.framework/Headers/*.h'
-  s.libraries = 'crystal'
-  
+  s.preserve_paths = 'Libraries/*.a'
 
 end
